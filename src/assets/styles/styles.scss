@@ -1,12 +1,8 @@
 @import "~normalize-scss/sass/normalize/import-now";
 @import "fonst";
+@import "global";
+@import "utils";
 
-body {
-  font-family: 'Qanelas', Arial, sans-serif;
-  font-weight: 400;
-  color: $base-white;
-}
-
-*, :before, :after {
-  box-sizing: border-box;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

@@ -1,0 +1,7 @@
+.custom-container {
+  @apply mx-auto px-mobile tablet:px-tablet laptop:px-laptop desktop:px-desktop w-full max-w-screen-desktop;
+}
+
+.clear-list {
+  @apply m-0 p-0 list-none;
+}

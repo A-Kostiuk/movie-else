@@ -9,12 +9,12 @@
 
 <script lang="ts">
 import {defineComponent, PropType} from 'vue';
-import {movieCard} from '@/components/ui';
+import {MovieCard} from '@/components/ui';
 import {ShortDescMovie} from '@/interfaces/movie-api';
 
 export default defineComponent({
   name: 'movie-list',
-  components: {movieCard},
+  components: {MovieCard},
   props: {
     movies: {
       required: true,

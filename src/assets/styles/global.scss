@@ -1,0 +1,7 @@
+*, :before, :after {
+  @apply box-border;
+}
+
+a {
+  @apply no-underline text-inherit;
+}

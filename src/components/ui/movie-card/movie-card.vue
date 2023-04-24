@@ -1,21 +1,22 @@
 <template>
-  <li class="movie-card">
-    <router-link class="movie-card__link" :to="`/movie/${movie.id}`">
-      <div class="movie-card__rating"
-           :class="{'movie-card__rating--good': movie.vote_average >= 7,
-          'movie-card__rating--average': movie.vote_average < 7,
-          'movie-card__rating--bad': movie.vote_average < 5}">
+  <div class="relative">
+    <router-link :to="`/movie/${movie.id}`">
+      <div class="absolute top-4 right-4 font-bold text-xl rounded px-4 py-1"
+           :class="{'bg-goodRating': movie.vote_average >= 7,
+          'bg-averageRating': movie.vote_average < 7,
+          'bg-badRating': movie.vote_average < 5}">
         {{ movie.vote_average }}
       </div>
-      <img class="movie-card__poster" :src="imageUrl" :alt="movie.title" width="200" height="300">
-      <h3 class="movie-card__title">{{ movie.title }}</h3>
+      <img class="mb-2 h-full w-full object-cover rounded-xl h-[300px] laptop:h-[385px] desktop:h-[485px]" :src="imageUrl"
+           :alt="movie.title" width="200" height="300">
+      <h3 class="text-xl font-semibold text-center">{{ movie.title }}</h3>
     </router-link>
-  </li>
+  </div>
 </template>
 
 <script lang="ts">
-import {defineComponent, PropType} from 'vue';
-import {ShortDescMovie} from '@/interfaces/movie-api';
+import { defineComponent, PropType } from 'vue';
+import { ShortDescMovie } from '@/interfaces/movie-api';
 import getImageUrl from '@/utils/images';
 
 export default defineComponent({
@@ -33,61 +34,3 @@ export default defineComponent({
   },
 });
 </script>
-
-<style lang="scss" scoped>
-.movie-card {
-  position: relative;
-}
-
-.movie-card__link {
-  color: inherit;
-  text-decoration: none;
-}
-
-.movie-card__poster {
-  height: 300px;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 10px;
-
-  @media (min-width: $tablet-width) {
-    height: 300px;
-  }
-
-  @media (min-width: $laptop-width) {
-    height: 385px;
-  }
-
-  @media (min-width: $desktop-width) {
-    height: 485px;
-  }
-}
-
-.movie-card__title {
-  margin: 5px 0 0;
-
-}
-
-.movie-card__rating {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 22px;
-  padding: 5px 10px;
-  border-radius: 5px;
-}
-
-.movie-card__rating--good {
-  background-color: $good-rating;
-}
-
-.movie-card__rating--average {
-  background-color: $average-rating;
-}
-
-.movie-card__rating--bad {
-  background-color: $bad-rating;
-}
-</style>

@@ -56,63 +56,63 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-.main-desc {
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    grid-template-rows: repeat(3, min-content) 1fr;
-    gap: 5px 20px;
-  }
-
-  @media (min-width: $laptop-width) {
-    gap: 5px 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    gap: 5px 60px;
-  }
-}
-
-.main-desc__poster {
-  width: 230px;
-  height: 310px;
-  align-self: center;
-  margin-bottom: 20px;
-
-  @media (min-width: $tablet-width) {
-    order: -1;
-    grid-row-start: span 4;
-    margin: 0;
-    width: 300px;
-    height: 400px;
-  }
-}
-
-.main-desc__title {
-  font-weight: 900;
-  font-size: 32px;
-  line-height: 41px;
-  margin: 0 0 5px;
-
-  @media (min-width: $tablet-width) {
-    margin: 0;
-  }
-}
-
-.main-desc__original-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  margin: 0 0 20px;
-}
-
-.main-desc__overview {
-  margin: 0;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 1.5;
-}
+//.main-desc {
+//  display: flex;
+//  flex-direction: column;
+//
+//  @media (min-width: $tablet-width) {
+//    display: grid;
+//    grid-template-columns: 300px 1fr;
+//    grid-template-rows: repeat(3, min-content) 1fr;
+//    gap: 5px 20px;
+//  }
+//
+//  @media (min-width: $laptop-width) {
+//    gap: 5px 30px;
+//  }
+//
+//  @media (min-width: $desktop-width) {
+//    gap: 5px 60px;
+//  }
+//}
+//
+//.main-desc__poster {
+//  width: 230px;
+//  height: 310px;
+//  align-self: center;
+//  margin-bottom: 20px;
+//
+//  @media (min-width: $tablet-width) {
+//    order: -1;
+//    grid-row-start: span 4;
+//    margin: 0;
+//    width: 300px;
+//    height: 400px;
+//  }
+//}
+//
+//.main-desc__title {
+//  font-weight: 900;
+//  font-size: 32px;
+//  line-height: 41px;
+//  margin: 0 0 5px;
+//
+//  @media (min-width: $tablet-width) {
+//    margin: 0;
+//  }
+//}
+//
+//.main-desc__original-title {
+//  font-weight: 500;
+//  font-size: 20px;
+//  line-height: 24px;
+//  margin: 0 0 20px;
+//}
+//
+//.main-desc__overview {
+//  margin: 0;
+//  font-weight: 500;
+//  font-size: 15px;
+//  line-height: 1.5;
+//}
 </style>

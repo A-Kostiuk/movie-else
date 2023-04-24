@@ -76,18 +76,18 @@ export default defineComponent({
   font-size: 12px;
   line-height: 15px;
 
-  @media (min-width: $tablet-width) {
-    font-size: 13px;
-    line-height: 16px;
-  }
-  @media (min-width: $laptop-width) {
-    font-size: 16px;
-    line-height: 20px;
-  }
-  @media (min-width: $desktop-width) {
-    font-size: 18px;
-    line-height: 22px;
-  }
+  //@media (min-width: $tablet-width) {
+  //  font-size: 13px;
+  //  line-height: 16px;
+  //}
+  //@media (min-width: $laptop-width) {
+  //  font-size: 16px;
+  //  line-height: 20px;
+  //}
+  //@media (min-width: $desktop-width) {
+  //  font-size: 18px;
+  //  line-height: 22px;
+  //}
 }
 
 p {

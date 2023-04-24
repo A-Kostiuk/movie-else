@@ -1,17 +1,5 @@
 @font-face {
   font-family: "Qanelas";
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-  src: local("Qanelas");
-  src: url('@/assets/fonts/Qanelas-Light.eot');
-  src: url('@/assets/fonts/Qanelas-Light.eot?#iefix') format('embedded-opentype'),
-  url('@/assets/fonts/Qanelas-Light.woff') format('woff'),
-  url('@/assets/fonts/Qanelas-Light.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: "Qanelas";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -56,18 +44,6 @@
   src: url('@/assets/fonts/Qanelas-Bold.eot?#iefix') format('embedded-opentype'),
   url('@/assets/fonts/Qanelas-Bold.woff') format('woff'),
   url('@/assets/fonts/Qanelas-Bold.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: "Qanelas";
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
-  src: local("Qanelas");
-  src: url('@/assets/fonts/Qanelas-ExtraBold.eot');
-  src: url('@/assets/fonts/Qanelas-ExtraBold.eot?#iefix') format('embedded-opentype'),
-  url('@/assets/fonts/Qanelas-ExtraBold.woff') format('woff'),
-  url('@/assets/fonts/Qanelas-ExtraBold.ttf') format('truetype');
 }
 
 @font-face {

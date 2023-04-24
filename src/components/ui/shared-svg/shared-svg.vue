@@ -1,13 +1,14 @@
 <template>
-  <svg v-if="iconId === 'search'" xmlns="http://www.w3.org/2000/svg" :width="width" :height="height" fill="none">
-    <path stroke="#151A26" stroke-linecap="round" stroke-width="1.5"
+  <svg v-if="iconId === 'search'" xmlns="http://www.w3.org/2000/svg" :width="width" :height="height" fill="none"
+       viewBox="0 0 17 17">
+    <path stroke="#3657CB" stroke-linecap="round" stroke-width="1.5"
           d="M11.1 11.1 16 16m-3.26-9.13A5.87 5.87 0 1 1 1 6.87a5.87 5.87 0 0 1 11.74 0Z" />
   </svg>
   <p v-else>Useless Id</p>
 </template>
 
 <script lang="ts">
-import {defineComponent, PropType} from 'vue';
+import { defineComponent, PropType } from 'vue';
 
 type IdIcon = 'search'
 

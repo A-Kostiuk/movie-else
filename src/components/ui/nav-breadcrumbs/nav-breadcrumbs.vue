@@ -39,7 +39,7 @@ export default defineComponent({
   flex-wrap: wrap;
 
   &__link {
-    color: $secondary;
+    //color: $secondary;
     text-decoration: none;
   }
 }

@@ -1,7 +1,7 @@
 <template>
-  <nav class="navigation">
-    <ul class="nav-list">
-      <li class="nav-list__item" v-for="navItem of navItems"
+  <nav class="flex self-center">
+    <ul class="clear-list flex gap-1.5 self-center">
+      <li class="text-sm tablet:text-base font-bold" v-for="navItem of navItems"
           :key="navItem.path"
       >
         <router-link :to="navItem.path">{{ navItem.title }}</router-link>
@@ -29,32 +29,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss" scoped>
-.navigation {
-  display: flex;
-  align-self: center;
-}
-
-.nav-list {
-  display: flex;
-  gap: 10px;
-  align-self: center;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  font-size: 13px;
-  line-height: 1.3;
-  font-weight: 700;
-
-  @media (min-width: $desktop-width) {
-    font-size: 17px;
-    line-height: 1.3;
-  }
-}
-
-.nav-list__item a {
-  text-decoration: none;
-  color: $base-white;
-}
-</style>
